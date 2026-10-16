@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "id": "java-backend",
+  "title": "자바 백엔드 과정",
+  "description": "Git과 자바에서 시작해요. TDD로 명언 앱과 계산기를 만들어요. 프론트 기초까지 이어가요.",
+  "repository": "jhs512/mq3-course-java-backend",
+  "lessons": [
+    {
+      "id": "git-environment",
+      "title": "개발환경과 Git의 첫 흐름",
+      "repository": "jhs512/mq3-lesson-git-environment",
+      "revision": "v1.0.0",
+      "sha256": "8cfddb9153109992b94ed4402e176913d293dcd5c08a2d8197354fce8319accf",
+      "prerequisites": [],
+      "required": true
+    },
+    {
+      "id": "java-values",
+      "title": "자바의 값과 입력·출력",
+      "repository": "jhs512/mq3-lesson-java-values",
+      "revision": "v1.0.0",
+      "sha256": "ba88cdfc16f9307bf2c9fc975b3153cfc0ac846e296f7864cf55441628fd5e29",
+      "prerequisites": [
+        "git-environment"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-control",
+      "title": "조건·반복·디버깅",
+      "repository": "jhs512/mq3-lesson-java-control",
+      "revision": "v1.0.0",
+      "sha256": "abc98c60765a402444436cf352e8c8d5b699fb66aa98865f4ab6ea46fc727a37",
+      "prerequisites": [
+        "java-values"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-methods-arrays",
+      "title": "메서드와 배열",
+      "repository": "jhs512/mq3-lesson-java-methods-arrays",
+      "revision": "v1.0.0",
+      "sha256": "2bbc5c57b497c74849e72828ca4d5f927b3e6ac268c80f6dd547244af428bf24",
+      "prerequisites": [
+        "java-control"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-objects",
+      "title": "객체·생성자·참조·static",
+      "repository": "jhs512/mq3-lesson-java-objects",
+      "revision": "v1.0.0",
+      "sha256": "e7a9a41a22afa3e2aa143aef6adb2a39627fff47da0c9d10d8617637f9cc03d6",
+      "prerequisites": [
+        "java-methods-arrays"
+      ],
+      "required": true
+    },
+    {
+      "id": "wise-array",
+      "title": "명언 게시판 1 · 배열 CRUD",
+      "repository": "jhs512/mq3-lesson-wise-array",
+      "revision": "v1.0.0",
+      "sha256": "2fde8df4adb5fec88fedc8ebdba15c731c6247ae11651c346aabd708a23400e9",
+      "prerequisites": [
+        "java-objects"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-collections",
+      "title": "컬렉션·제네릭·예외",
+      "repository": "jhs512/mq3-lesson-java-collections",
+      "revision": "v1.0.0",
+      "sha256": "311779d7d27242130422af970c25a0c58314463dba75f1dbfdd8cd0acfa70c30",
+      "prerequisites": [
+        "wise-array"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-design",
+      "title": "캡슐화·인터페이스·조합",
+      "repository": "jhs512/mq3-lesson-java-design",
+      "revision": "v1.0.0",
+      "sha256": "594861ea6cc6895a6eafc6affb4aef74d3cba499278e0abeff5a67b1d85f2846",
+      "prerequisites": [
+        "java-collections"
+      ],
+      "required": true
+    },
+    {
+      "id": "wise-list",
+      "title": "명언 게시판 2 · 컬렉션과 요청",
+      "repository": "jhs512/mq3-lesson-wise-list",
+      "revision": "v1.0.0",
+      "sha256": "42ff9e4fcd41788b24bf3f6b6f5e47dac744298546275bc049f8ef4760ab9ef7",
+      "prerequisites": [
+        "java-design"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-streams",
+      "title": "람다·스트림·집계",
+      "repository": "jhs512/mq3-lesson-java-streams",
+      "revision": "v1.0.0",
+      "sha256": "cfab3f3fc14558a441ed4c54b3e189bf34b1a3a6c86f6dcf79420dd9cbece084",
+      "prerequisites": [
+        "wise-list"
+      ],
+      "required": true
+    },
+    {
+      "id": "tdd-basics",
+      "title": "JUnit·AssertJ·Gradle과 TDD",
+      "repository": "jhs512/mq3-lesson-tdd-basics",
+      "revision": "v1.0.0",
+      "sha256": "0cad1001faaca23a36b8cd9c761b91a67a88c44bb30992944ea66f17d08f17f6",
+      "prerequisites": [
+        "java-streams"
+      ],
+      "required": true
+    },
+    {
+      "id": "tdd-rq",
+      "title": "TDD로 요청 파서 만들기",
+      "repository": "jhs512/mq3-lesson-tdd-rq",
+      "revision": "v1.0.0",
+      "sha256": "9f30787cd6443d021185d8a16e2f7d337e2ffc3b43a5918f5a8fe3d5334a2599",
+      "prerequisites": [
+        "tdd-basics"
+      ],
+      "required": true
+    },
+    {
+      "id": "wise-layers",
+      "title": "명언 게시판 3 · 역할과 테스트",
+      "repository": "jhs512/mq3-lesson-wise-layers",
+      "revision": "v1.0.0",
+      "sha256": "6193249f3e4713b59bb864fb62abc9795a02aa30aa1bb154b06779e4aa747482",
+      "prerequisites": [
+        "tdd-rq"
+      ],
+      "required": true
+    },
+    {
+      "id": "wise-files",
+      "title": "명언 게시판 4 · 파일·JSON·검색",
+      "repository": "jhs512/mq3-lesson-wise-files",
+      "revision": "v1.0.0",
+      "sha256": "c8b989e093450b3e09f36994212338175b6087a9b19927f6da2a6c676a4a1c5a",
+      "prerequisites": [
+        "wise-layers"
+      ],
+      "required": true
+    },
+    {
+      "id": "java-recursion",
+      "title": "재귀와 종료 조건",
+      "repository": "jhs512/mq3-lesson-java-recursion",
+      "revision": "v1.0.0",
+      "sha256": "283fb4f910611ad70a407242de0e246a81eff90cadffd4d8aa326411f198cb76",
+      "prerequisites": [
+        "wise-files"
+      ],
+      "required": true
+    },
+    {
+      "id": "calculator-sequences",
+      "title": "TDD 계산기 1 · 연속 덧셈·뺄셈",
+      "repository": "jhs512/mq3-lesson-calculator-sequences",
+      "revision": "v1.0.0",
+      "sha256": "2affb02f293cc4905d09a9411dccfc4e19ccbb9d80a207bade0fdc29fddad25f",
+      "prerequisites": [
+        "java-recursion"
+      ],
+      "required": true
+    },
+    {
+      "id": "calculator-parser",
+      "title": "TDD 계산기 2 · 우선순위·괄호·단항 음수",
+      "repository": "jhs512/mq3-lesson-calculator-parser",
+      "revision": "v1.0.0",
+      "sha256": "bea919bb0079eb80c6dc4a9801ba0c6f783ee7faf74763e8064700c5ce0236ff",
+      "prerequisites": [
+        "calculator-sequences"
+      ],
+      "required": true
+    },
+    {
+      "id": "html-css",
+      "title": "HTML·CSS와 접근 가능한 화면",
+      "repository": "jhs512/mq3-lesson-html-css",
+      "revision": "v1.0.0",
+      "sha256": "46c9c7a1d015fb645280e90fb5da1c35b5feb90a7fca7e448f83720aa380bf9a",
+      "prerequisites": [
+        "calculator-parser"
+      ],
+      "required": true
+    },
+    {
+      "id": "tailwind-layout",
+      "title": "Tailwind로 반응형 레이아웃 만들기",
+      "repository": "jhs512/mq3-lesson-tailwind-layout",
+      "revision": "v1.0.0",
+      "sha256": "e84cdd15d61619d090a8a1c4c01e2e98773e04973c6a84830c85a56b62e73d01",
+      "prerequisites": [
+        "html-css"
+      ],
+      "required": true
+    },
+    {
+      "id": "javascript-browser",
+      "title": "JavaScript와 브라우저 이벤트",
+      "repository": "jhs512/mq3-lesson-javascript-browser",
+      "revision": "v1.0.0",
+      "sha256": "68e053ff3484a56032de8635296788d1cae54df5dea4e482a099a2afc78dfffc",
+      "prerequisites": [
+        "tailwind-layout"
+      ],
+      "required": true
+    },
+    {
+      "id": "react-components",
+      "title": "React 컴포넌트·props·목록",
+      "repository": "jhs512/mq3-lesson-react-components",
+      "revision": "v1.0.0",
+      "sha256": "35bfaa37cbf12e74676fd9ec0abc3599b5d290ccec7796f2b21f031f884a3b84",
+      "prerequisites": [
+        "javascript-browser"
+      ],
+      "required": true
+    },
+    {
+      "id": "react-state",
+      "title": "React 상태·폼·불변 갱신",
+      "repository": "jhs512/mq3-lesson-react-state",
+      "revision": "v1.0.0",
+      "sha256": "779cf96f0dea9a089fb623de4f91b84bb7bd7ed4ef7c09c9e450216cae02b380",
+      "prerequisites": [
+        "react-components"
+      ],
+      "required": true
+    },
+    {
+      "id": "react-effects-context",
+      "title": "React Effect·Context·저장",
+      "repository": "jhs512/mq3-lesson-react-effects-context",
+      "revision": "v1.0.0",
+      "sha256": "1b567164353c50904cb7f968623028c3d0f150e6e8166105c489f1ede80c195a",
+      "prerequisites": [
+        "react-state"
+      ],
+      "required": true
+    },
+    {
+      "id": "frontend-project",
+      "title": "프론트 통합 프로젝트 · 명언 CRUD",
+      "repository": "jhs512/mq3-lesson-frontend-project",
+      "revision": "v1.0.0",
+      "sha256": "3ea1be42269755b25dd59466bf1a6fe5f63eea0a8d96ead12f2395cd5dc8dbb1",
+      "prerequisites": [
+        "react-effects-context"
+      ],
+      "required": true
+    }
+  ]
+}
